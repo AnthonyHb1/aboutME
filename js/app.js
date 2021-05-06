@@ -52,15 +52,16 @@ if (myHobby === 'yes') {
 }
 
 
+let myFavMovies = ['Django Unchained', 'Wolf of Wallstreet', 'Lion King', 'Harry Potter', 'Lord of the Rings', 'Friday Series', 'Shrek', 'The Grinch'];
+
+
 let counter = 5;
 let theyGotItRight = false;
 while (theyGotItRight === false && counter > 0) {
-  alert('Ok, you have ' + counter + ' guesses to correctly ');
+  alert('you have ' + counter + ' guesses to get this question correct');
   // they get in the loop and I ask them the question
-  let myFavMovies = prompt('Can you guess who his favorite rapper is? ');
-  let myFavMovies = myFavMovies.toLowerCase();
-
-  let myFavMovies = ['Django Unchained', 'Wolf of Wallstreet', 'Lion King', 'Harry Potter', 'Lord of the Rings', 'Friday Series', 'Shrek', 'The Grinch'];
+  let userGuess1 = prompt('Guess one of my favorite movies?');
+  let userGuess = userGuess1.toLowerCase();
 
   // I check their guess against my list of movies
   for (let i = 0; i < myFavMovies.length; i++) {
@@ -84,7 +85,7 @@ let myNum = 7;
 
 for (let i = 0; i < 5; i++) {
   alert('You have this many guesses left ' + (5 - i));
-  let userGuess = prompt('Pick a number between 1-10');
+  let userGuess = prompt('Pick a number any number between 1-20');
   let numericalGuess = parseInt(userGuess);
   console.log(numericalGuess);
   if (numericalGuess === myNum) {
