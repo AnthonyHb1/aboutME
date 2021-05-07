@@ -5,10 +5,12 @@ body {
 
 h1 {
   font-size: 2em;
+  border-color: black;
 }
 
 h2 {
   font-size: 1.5em;
+  border-color: grey;
 }
 
 h3 {

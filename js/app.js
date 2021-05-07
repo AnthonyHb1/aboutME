@@ -51,17 +51,13 @@ if (myHobby === 'yes') {
   alert('Maybe you\'re confused by the rules')
 }
 
-
-let myFavMovies = ['Django Unchained', 'Wolf of Wallstreet', 'Lion King', 'Harry Potter', 'Lord of the Rings', 'Friday Series', 'Shrek', 'The Grinch'];
-
-
 let counter = 5;
 let theyGotItRight = false;
 while (theyGotItRight === false && counter > 0) {
-  alert('you have ' + counter + ' guesses to get this question correct');
-  // they get in the loop and I ask them the question
-  let userGuess1 = prompt('Guess one of my favorite movies?');
-  let userGuess = userGuess1.toLowerCase();
+    alert('you have ' + counter + ' guesses to get this question correct');
+    // they get in the loop and I ask them the question
+    let userGuess1 = prompt('Guess one of my favorite movies?');
+    let userGuess = userGuess1.toLowerCase();
 
   // I check their guess against my list of movies
   for (let i = 0; i < myFavMovies.length; i++) {
@@ -79,6 +75,9 @@ while (theyGotItRight === false && counter > 0) {
   // I did not decrement the counter!!!
   counter--;
 }
+
+let myFavMovies = ['Django Unchained', 'Wolf of Wallstreet', 'Lion King', 'Harry Potter', 'Lord of the Rings', 'Friday Series', 'Shrek', 'The Grinch'];
+
 alert('These are all the possible correct answers ' + myFavMovies);
 
 let myNum = 7;
